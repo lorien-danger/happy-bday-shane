@@ -17,8 +17,6 @@
         selectedColor = colors[Math.floor(Math.random() * colors.length)];
         selectedSize = selectedSize === size[0] ? size[1] : size[0];
         scrollIndicatorPos = scrollIndicatorPos === "bottom-10" ? "bottom-9" : "bottom-10";
-
-        audio.play();
     }
 
     function confettiTime() {
@@ -50,6 +48,7 @@
             <button on:click={() => {
                 showCard = true;
                 confettiTime();
+                audio.play();
             }} class="mt-10 btn btn-secondary text-xl">Click me 😉</button>
         {:else}
             <div class="card">
