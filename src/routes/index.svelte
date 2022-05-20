@@ -42,7 +42,7 @@
 </script>
 
 <div class="container mx-auto font-sans text-center flex flex-col items-center">
-    <div class="h-screen flex flex-col justify-center items-center ">
+    <div class="h-screen flex flex-col justify-center items-center">
         {#if !showCard}
             <h1 class="text-5xl font-bold leading-normal">Happy birthday<br>shane!</h1>
             <button on:click={() => {
@@ -71,5 +71,5 @@
             </div>
         </div>
     {/if}
-    <audio bind:this={audio} src="/party-music.mp3"></audio>
+    <audio bind:this={audio} src="/party-music.mp3" loop></audio>
 </div>
